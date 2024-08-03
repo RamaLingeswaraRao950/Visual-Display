@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(222, 222, 222);
+  border: solid black 2px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  border: solid black 2px;
+  box-shadow: 1px 1px;
+  background-color: rgb(222, 25, 25);
+  padding: 9px;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 3em;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee {
+  display: inline-block;
+  animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.container {
+  position: relative;
+  margin: 22px;
+  padding: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  margin: 2px;
+  background-color:  rgb(222, 147, 147);
+  opacity: 0.3;
+  transition: background-color 222ms ease-in, opacity 222ms ease-in;
+  border: solid black 2px;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border: solid black 2px;
+}
+
+.box img:hover {
+  border-radius: 77px;
+  border: solid black 3px;
+}
+
+.box:hover {
+  background-color: rgb(222, 200, 17);
+  opacity: 2.2;
+  border: solid blue 3px;
+  border-radius: 77px;
+}
